@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/abes.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'semantic/semantic.css' %}">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -21,11 +21,29 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
+
         {% wagtailuserbar %}
 
-        {% block content %}{% endblock %}
+        <div class="ui center aligned padded grid">
+            <div class="sixteen wide olive column">
+                <img src="https://scontent-ord1-1.xx.fbcdn.net/hphotos-xlt1/v/t1.0-9/11391191_883964391683716_5458713495819472460_n.jpg?oh=e42498409f180064f37294ca8a15092a&oe=5737001F" />
+            </div>
+            <div class="sixteen wide black column"></div>
+            <div class="sixteen wide blue column"></div>
+            <div class="sixteen wide orange column"></div>
+            <div class="sixteen wide orange column"></div>
+            <div class="sixteen wide olive column"></div>
+            <div class="sixteen wide black column"></div>
+            <div class="sixteen wide blue column"></div>
+        </div>
+
+        <div class="ui grid">
+            {% block content %}{% endblock %}
+        </div>
 
         {# Global javascript #}
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="{% static 'semantic/semantic.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/abes.js' %}"></script>
 
         {% block extra_js %}

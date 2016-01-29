@@ -1,0 +1,23 @@
+{
+  "name": "abes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "semantic-ui": "^2.1.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guyjacks/abes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guyjacks/abes/issues"
+  },
+  "homepage": "https://github.com/guyjacks/abes#readme"
+}
